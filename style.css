@@ -1,0 +1,369 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    background-color:#000000;
+    color:white;
+    overflow: hidden;
+}
+.main{
+    display:flex;
+    height:100vh;
+}
+.sidebar{
+    background-color:black;
+    width: 360px;
+    border-radius:1rem;
+    margin-bottom:87px;
+    
+}
+.content{
+    background-color:#202020;
+    flex:1;
+    overflow:auto;
+    border-radius:1rem;
+    margin-bottom:87px;
+    margin-top:7px;
+    margin-right:7px;
+    /* padding:0 1rem 1rem 1rem; */
+}
+.music{
+    background-color : black;
+    position:fixed;
+    bottom:0;
+    left:0;
+    /* background-color:transparent; */
+    width:100%;
+    height:80px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size:1rem;
+    font-weight:600;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;    
+    height:160px;
+    margin:7px;
+}
+.nav-option{
+    margin-left:1.75rem;
+    line-height:50px;
+}
+.nav-option i{
+    font-size:1.25rem;
+    margin-right:1.1rem;
+    
+}
+.search{
+    opacity:0.6;
+}
+.search:hover{
+    opacity:1;
+}
+.library{
+    background-color: #121212;
+    border-radius:1rem;
+    margin:7px;
+    padding:0 0 38px 0;
+    margin-bottom:27px;
+}
+.lib-option img{
+    height:1.25rem;
+    width:1.25rem;
+    margin-right:.75rem;
+}
+.option{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:60px;
+    background-color:#121212;
+    border-radius:1rem 1rem 0 0;
+    /* position:fixed; */
+}
+.lib-option{
+    margin-left:1.75rem;
+    margin-top:0.4rem;
+    line-height:50px;
+    opacity:0.6;
+}
+.lib-option:hover{
+    opacity:1;
+}
+.icon{
+    font-size:1.25rem;
+    /* position:fixed; */
+    margin-top:.6rem;
+    margin-right:1.5rem;
+    /* margin-left: 1.5rem; */
+    font-weight:200;
+    opacity:0.6;
+    
+}
+/* .plus:hover{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    background-color: black;
+    opacity:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.scroll{
+    height:235px;
+    background-color:#121212;
+    overflow:auto;
+}
+.box{
+    height:7.5rem;
+    background-color:#242424;
+    margin:7px 2px 16px 7px;
+    border-radius:.5rem;
+    padding:1rem 1.25rem;
+}
+.box-p1{
+    font-size:1rem;
+    font-weight:600;
+    margin-bottom:.75rem;
+}
+.box-p2{
+    font-size:.85rem;
+    opacity:0.9;
+}
+.badge{
+    width:fit-content;
+    height:34px;
+    border:none;
+    border-radius:100px;
+    background-color: white;
+    color:black;
+    padding:5px;
+    font-size:.85rem;
+    font-weight:600;
+}
+/* .badge:hover{
+    width:135px;
+} */
+.second{
+    width:140px;
+}
+/* hover */
+
+.cookie{
+    font-size:.65rem;
+    margin-left:1.75rem;
+    margin-top:1.5rem;
+    margin-bottom: 27px;
+}
+.lang{
+    background-color:black;
+    color:white;
+    border:1px solid #aeaaaa;
+    width:fit-content;
+    height:30px;
+    border-radius:100px;
+    font-size:.85rem;
+    font-weight: 600;
+    margin-top:1rem;
+    margin-left:1.75rem;
+    /* margin-bottom: 27px; */
+}
+.lang:hover{
+    border:1.5px solid white;
+}
+
+.navigation{
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:70px;
+    background-color: #202020;
+    z-index:5;
+}
+.con-icon{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size:2rem;
+    font-weight:200;
+    margin-left:1rem;
+}
+.con-btn{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right:1.5rem;
+    font-size:1.15rem;
+}
+.con-btn .badge{
+    margin-right:1rem;
+}
+.con-btn .premium{
+    font-size: .9rem;
+}
+.con-btn .black{
+    background-color: black;
+    color:white;
+    font-size:.9rem;
+    width:120px;
+}
+.con-btn .black i{
+    margin-right: .5rem;
+}
+.con-btn .item{
+    margin-right:1.25rem;
+}
+.con-icon i{
+    margin-left:.6rem;
+}
+.boxes{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    background-color: black;
+    opacity:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:1440px){
+    .hide{
+        display:none;
+    }
+}
+
+.cards{
+    margin-left:1.75rem;
+
+}
+.cards-container{
+    display: flex;
+    flex-wrap:wrap;
+}
+.card{
+    width:170px;
+    height:250px;
+    background-color: #171717;
+    border-radius:.5rem;
+    padding:15px;
+    margin-right: 2rem;
+    margin-bottom : 1.5rem;
+}
+.card-img{
+    width: 165px;
+    height: 140px;
+    border-radius: .5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size:0.85rem;
+    opacity:0.8;
+}
+.card:hover{
+    background-color: #282828;
+}
+.show{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:1.5rem;
+    font-size: 1rem;
+    
+}
+.show a{
+    font-size: .85rem ;
+    opacity:0.7;
+}
+.show a:hover{
+    text-decoration: underline;
+}
+.show h2:hover{
+    text-decoration: underline;
+
+}
+.music{
+    display:flex;
+}
+.album{
+    width:25%;
+}
+.player{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.player-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.player-cont img{
+    height:.9rem;
+    width:.9rem;
+    padding:.25rem;
+    margin:0 .5rem 0 .5rem;
+    opacity:0.6;
+}
+.player-cont img:hover{
+    opacity:1;
+}
+.player-cont .pause{
+    width:2rem;
+    height:2rem;
+}
+.player-cont .pause{
+    opacity:1;
+}
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-top: .5rem;
+}
+.bar{
+    appearance:none;
+    width:500px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.bar::-webkit-slider-runnable-track{
+    background-color: gray;
+    height:.25rem;
+    border-radius: 100px;
+    margin:0 0.5rem 0 0.5rem;
+   
+}
+.bar::-webkit-slider-thumb{
+   appearance: none;
+   height:.75rem;
+   width:.75rem;
+   border-radius: 50%;
+   background-color: #ddd;
+   margin-top:-4px;
+}
+
+.progress-bar span{
+    font-size: .75rem;
+}
+
+
+
+
+
+.control{
+    width:25%;
+}
